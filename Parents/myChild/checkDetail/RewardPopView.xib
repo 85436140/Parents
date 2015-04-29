@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RewardPopView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="56b-yr-bIr">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="bqg-8a-p60">
+                    <rect key="frame" x="0.0" y="134" width="320" height="300"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鼓励一下" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vPr-FF-3ll">
+                            <rect key="frame" x="126" y="8" width="68" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奖励几颗星星吧，还可以发送一句短评" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UfL-US-jbE">
+                            <rect key="frame" x="31" y="37" width="259" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" id="Cfa-L0-kCi">
+                            <rect key="frame" x="0.0" y="66" width="321" height="2"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.8208007812" green="0.8208007812" blue="0.8208007812" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iDi-Cd-zou">
+                            <rect key="frame" x="21" y="90" width="31" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="star_add.png">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="addBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="jHw-hx-rhE"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" id="BvV-hp-ud1">
+                            <rect key="frame" x="0.0" y="210" width="321" height="2"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.8208007812" green="0.8208007812" blue="0.8208007812" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mho-yd-4MG">
+                            <rect key="frame" x="202" y="238" width="100" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="发送" backgroundImage="btn_send.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="sendBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="6XH-fU-Mfv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iB4-jq-xAK">
+                            <rect key="frame" x="271" y="90" width="31" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="star_reduce.png">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="diffBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="f61-Xn-vE1"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" id="OPH-aX-z9C">
+                            <rect key="frame" x="110" y="95" width="100" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="XkF-Bq-plz">
+                            <rect key="frame" x="38" y="140" width="244" height="45"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iBE-bS-T7K">
+                                    <rect key="frame" x="0.0" y="0.0" width="244" height="45"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" backgroundImage="arrow_down_box_pingyu.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="commentDDLBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="axf-fm-ceW"/>
+                                    </connections>
+                                </button>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" id="TY7-gi-iZk">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="45"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <pickerView hidden="YES" contentMode="scaleToFill" id="CCn-dX-G3Q">
+                                    <rect key="frame" x="0.0" y="-85" width="200" height="216"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </pickerView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mae-uB-a5r">
+                            <rect key="frame" x="21" y="238" width="100" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="取消" backgroundImage="btn_cancel.png">
+                                <color key="titleColor" red="1" green="0.5450980392" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cancleBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ife-VL-bnp"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="addBtnOutlet" destination="iDi-Cd-zou" id="HxR-fS-jUW"/>
+                <outlet property="bottomView" destination="56b-yr-bIr" id="dx4-2f-sP8"/>
+                <outlet property="cancleBtnOutlet" destination="Mae-uB-a5r" id="RYk-sK-dcp"/>
+                <outlet property="diffBtnOutlet" destination="iB4-jq-xAK" id="iM1-Kd-rNM"/>
+                <outlet property="dropdownList" destination="XkF-Bq-plz" id="jQZ-8c-AI9"/>
+                <outlet property="encourageNotePickerView" destination="CCn-dX-G3Q" id="hZw-jA-yuh"/>
+                <outlet property="encourageView" destination="bqg-8a-p60" id="BHo-9p-Ahg"/>
+                <outlet property="rankView" destination="OPH-aX-z9C" id="8Di-iT-FhQ"/>
+                <outlet property="selectValueTextField" destination="TY7-gi-iZk" id="Nze-gE-Rxz"/>
+                <outlet property="sendBtnOutlet" destination="mho-yd-4MG" id="dW9-cw-bEU"/>
+            </connections>
+            <point key="canvasLocation" x="-523" y="265"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_down_box_pingyu.png" width="238" height="37"/>
+        <image name="btn_cancel.png" width="110" height="37"/>
+        <image name="btn_send.png" width="110" height="37"/>
+        <image name="star_add.png" width="31" height="30"/>
+        <image name="star_reduce.png" width="31" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

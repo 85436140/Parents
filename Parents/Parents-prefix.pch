@@ -1,0 +1,87 @@
+//
+//  P_Child-prefix.pch
+//  P_Child
+//
+//  Created by kfd on 14/10/23.
+//  Copyright (c) 2014年 qzz. All rights reserved.
+//
+
+//IM
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "IMUIDefine.h"
+#import "WCAlertView.h"
+#import "TTGlobalUICommon.h"
+#import "UIViewController+HUD.h"
+#import "UIViewController+DismissKeyboard.h"
+#import "NSString+Valid.h"
+
+#define MR_SHORTHAND
+#import "CoreData+MagicalRecord.h"
+
+#import "EaseMob.h"
+
+#endif
+
+//本地数据路径
+#define ER_DATABASE_PATH [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"Cache"]
+
+#define DATABAE_PATH [ER_DATABASE_PATH stringByAppendingPathComponent:@"ParentsDB.sqlite"]
+
+
+#ifndef P_Child_P_Child_prefix_pch
+#define P_Child_P_Child_prefix_pch
+#define X(v) (v).frame.origin.x
+#define Y(v) (v).frame.origin.y
+#define WIDTH(v) (v).frame.size.width
+#define HEIGH(v) (v).frame.size.height
+
+#import "PCBaseVC.h"
+#import "PCGloble.h"
+#import "HttpRequest.h"
+#import "ClassInfo.h"
+
+#define HTTPREQUEST [HttpRequest shareInstance]
+#define NOTIFICATION_ISEDIT @"notification_IsEdit"
+
+//测试路径
+#define kBASEURL @"http://qingzi.x-plan.net/"
+
+//navigation position
+#define NAVIGATION_RECT_MAX CGRectMake(0, 0, 100, 30)
+#define NAVIGATION_RECT_MID CGRectMake(0, 0, 75, 30)
+#define NAVIGATION_RECT_MIN CGRectMake(0, 0, 60, 30)
+
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+#define IPHONE4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+#define IPHONE5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define IPHONE6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750,1334), [[UIScreen mainScreen] currentMode].size) : NO)
+
+// 判断是否是iOS7
+#define isIOS7Above ([[[[[UIDevice currentDevice] systemVersion] componentsSeparatedByString:@"."] objectAtIndex:0] intValue] >= 7)
+
+// View 圆角和加边框
+#define ViewBorderRadius(View, Radius, Width, Color)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:NO];\
+[View.layer setBorderWidth:(Width)];\
+[View.layer setBorderColor:[Color CGColor]]
+
+// View 圆角
+#define ViewRadius(View, Radius)\
+\
+[View.layer setCornerRadius:(Radius)];\
+[View.layer setMasksToBounds:YES]
+
+#endif
